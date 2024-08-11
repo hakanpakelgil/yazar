@@ -5,6 +5,7 @@ import 'package:yazar/tools/locator.dart';
 
 class AuthRepository implements AuthBase{
   AuthService _service = locator<ApiAuthService>();
+
   @override
   Future<String> signInGoogle() async{
     return await _service.signInGoogle();
